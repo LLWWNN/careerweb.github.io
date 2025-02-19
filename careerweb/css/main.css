@@ -1,0 +1,10 @@
+/* Import other CSS files first */
+@import url('form.css');
+@import url('button.css'); 
+@import url('style.css');
+
+/* Then add any additional CSS rules below */
+:root {
+    --primary-color: #2563eb;
+    /* other variables */
+}

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>职汇通 - 您的职业发展领航者</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav">
+        <ul>
+            <li><a href="#home">首页</a></li>
+            <li><a href="#jobs">热门职位</a></li>
+            <li><a href="#factories">合作工厂</a></li>
+            <li><a href="#contact">联系我们</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="header">
+        <div class="header-content">
+            <h1>找工作，就上职汇通</h1>
+            <p>广州最专业的工厂招聘平台 | 10年行业经验 | 100%真实职位</p>
+        </div>
+    </header>
+    <section id="jobs" class="section">
+        <div class="container">
+            <h2>热门职位</h2>
+            <!-- 职位筛选按钮 -->
+            <div class="job-type-filter">
+                <p class="filter-section-title">按工种类别筛选</p>
+                <button class="filter-btn active" data-category="all">
+                    全部职位
+                </button>
+                <button class="filter-btn" data-category="assembly">
+                    生产组装
+                </button>
+                <button class="filter-btn" data-category="quality">
+                    品质管理
+                </button>
+                <button class="filter-btn" data-category="technical">
+                    技术工程
+                </button>
+                <button class="filter-btn" data-category="logistics">
+                    仓储物流
+                </button>
+                <button class="filter-btn" data-category="operation">
+                    设备操作
+                </button>
+            </div>
+            
+            <!-- 为了让筛选按钮正常工作，确保每个工作卡片都有对应的类别 --  <div class="job-list">
+                <div class="job-card" data-category="assembly">
+
+            <!-- 职位列表 -->
+            <div class="job-list">
+                <!-- 手机组装技术员 -->
+                <div class="job-card" data-category="生产组装">
+                    <h3>手机组装技术员</h3>
+                    <p class="salary">￥4500-7500/月</p>
+                    <div class="tags">
+                        <span class="tag">包吃住</span>
+                        <span class="tag">五险一金</span>
+                        <span class="tag">月休4天</span>
+                    </div>
+                    <div class="requirements">
+                        <p><i class="fas fa-user"></i> 年龄：18-35岁</p>
+                        <p><i class="fas fa-graduation-cap"></i> 学历：初中及以上</p>
+                        <p><i class="fas fa-clock"></i> 工作制：两班倒</p>
+                        <p><i class="fas fa-clipboard-list"></i> 经验：无需经验</p>
+                    </div>
+                </div>
+
+                <!-- CNC操作工 -->
+                <div class="job-card" data-category="设备操作">
+                    <h3>CNC操作工</h3>
+                    <p class="salary">￥6000-9000/月</p>
+                    <div class="tags">
+                        <span class="tag">技术岗</span>
+                        <span class="tag">五险一金</span>
+                        <span class="tag">年终奖</span>
+                    </div>
+                    <div class="requirements">
+                        <p><i class="fas fa-user"></i> 年龄：22-45岁</p>
+                        <p><i class="fas fa-graduation-cap"></i> 学历：中专以上</p>
+                        <p><i class="fas fa-clock"></i> 工作制：两班制</p>
+                        <p><i class="fas fa-clipboard-list"></i> 经验：1年以上</p>
+                    </div>
+                </div>
+                <!-- SMT操作员 -->
+                <div class="job-card" data-category="设备操作">
+                    <h3>SMT操作员</h3>
+                    <p class="salary">￥5000-8000/月</p>
+                    <div class="tags">
+                        <span class="tag">高温补贴</span>
+                        <span class="tag">夜班补贴</span>
+                        <span class="tag">绩效奖金</span>
+                    </div>
+                    <div class="requirements">
+                        <p><i class="fas fa-user"></i> 年龄：18-40岁</p>
+                        <p><i class="fas fa-eye"></i> 要求：无色盲</p>
+                        <p><i class="fas fa-clock"></i> 工作制：三班倒</p>
+                        <p><i class="fas fa-clipboard-list"></i> 经验：优先考虑有经验</p>
+                    </div>
+                </div>
+
+                <!-- 品质检验员 -->
+                <div class="job-card" data-category="品质管理">
+                    <h3>品质检验员（QC）</h3>
+                    <p class="salary">￥4800-7000/月</p>
+                    <div class="tags">
+                        <span class="tag">工龄补贴</span>
+                        <span class="tag">年终奖</span>
+                        <span class="tag">带薪年假</span>
+                    </div>
+                    <div class="requirements">
+                        <p><i class="fas fa-user"></i> 年龄：20-35岁</p>
+                        <p><i class="fas fa-eye"></i> 要求：视力良好</p>
+                        <p><i class="fas fa-clock"></i> 工作制：固定白班</p>
+                        <p><i class="fas fa-clipboard-list"></i> 经验：1年以上优先</p>
+                    </div>
+                </div>
+                <!-- 继续添加其他职位卡片 -->
+                <div class="job-card" data-category="设备操作">
+                    <h3>注塑机操作工</h3>
+                    <p class="salary">￥4800-7500/月</p>
+                    <div class="tags">
+                        <span class="tag">包住宿</span>
+                        <span class="tag">工作餐</span>
+                        <span class="tag">高温补贴</span>
+                    </div>
+                    <div class="requirements">
+                        <p><i class="fas fa-user"></i> 年龄：20-40岁</p>
+                        <p><i class="fas fa-graduation-cap"></i> 学历：初中以上</p>
+                        <p><i class="fas fa-clock"></i> 工作制：三班倒</p>
+                        <p><i class="fas fa-clipboard-list"></i> 经验：有注塑经验优先</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+
+    <section id="factories" class="section" style="background: var(--light-bg);">
+        <div class="container">
+            <h2>合作工厂</h2>
+            <div class="grid">
+                <!-- 富士康 -->
+                <div class="factory-card">
+                    <div class="factory-logo">
+                        <i class="fas fa-industry fa-2x"></i>
+                    </div>
+                    <h3>富士康科技集团（广州园区）</h3>
+                    <p>全球领先的电子产品制造商，苹果产品代工基地</p>
+                    <div class="benefits-list">
+                        <div class="benefit-item">
+                            <i class="fas fa-home"></i>
+                            <span>免费住宿</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-utensils"></i>
+                            <span>补贴伙食</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>在职培训</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>晋升空间大</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 其他工厂卡片将在这里继续添加 -->
+                <div class="factory-card">
+                    <div class="factory-logo">
+                        <i class="fas fa-car fa-2x"></i>
+                    </div>
+                    <h3>广州广汽丰田汽车有限公司</h3>
+                    <p>世界500强企业，中日合资汽车制造商</p>
+                    <div class="benefits-list">
+                        <div class="benefit-item">
+                            <i class="fas fa-money-bill"></i>
+                            <span>高薪资待遇</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-bus"></i>
+                            <span>班车接送</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-medal"></i>
+                            <span>优秀员工奖</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-heart"></i>
+                            <span>节日福利</span>
+                        </div>
+                    </div>
+                    <div class="requirements">
+                        <p>【企业福利】</p>
+                        <ul>
+                            <li>五险一金+商业保险</li>
+                            <li>年终奖+季度奖金</li>
+                            <li>带薪年假15天</li>
+                            <li>免费工作餐</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <!-- 联系信息部分 -->
+            <div class="contact-info">
+                <h2>联系方式</h2>
+                <p class="section-description">欢迎通过以下方式与我们联系，我们将在24小时内回复您的咨询。</p>
+                
+                <div class="contact-info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <div class="contact-info-text">
+                        <h4>电话咨询</h4>
+                        <p>招聘热线：020-XXXXXXXX</p>
+                        <p>服务时间：9:00-18:00</p>
+                    </div>
+                </div>
+    
+                <div class="contact-info-item">
+                    <i class="fab fa-weixin"></i>
+                    <div class="contact-info-text">
+                        <h4>微信咨询</h4>
+                        <p>微信号：HR-XHD888</p>
+                        <p>24小时在线咨询</p>
+                    </div>
+                </div>
+    
+                <div class="contact-info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="contact-info-text">
+                        <h4>公司地址</h4>
+                        <p>广州市天河区XXX路XX号</p>
+                        <p>地铁X号线XXX站A出口</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- 联系表单部分 -->
+            <div class="contact-form">
+                <div class="success-message" id="successMessage">
+                    提交成功！我们会尽快与您联系。
+                </div>
+    
+                <form id="consultationForm" onsubmit="return false;">
+                    <div class="form-group">
+                        <label for="name">姓名</label>
+                        <input type="text" id="name" class="form-control" placeholder="请输入您的姓名" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="phone">手机号码</label>
+                        <input type="tel" id="phone" class="form-control" placeholder="请输入您的手机号码" required>
+                        <div class="error-message" id="phoneError"></div>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="jobType">期望岗位</label>
+                        <select id="jobType" class="form-control" required>
+                            <option value="">请选择期望岗位</option>
+                            <option value="手机组装技术员">手机组装技术员</option>
+                            <option value="SMT操作员">SMT操作员</option>
+                            <option value="品质检验员">品质检验员</option>
+                            <option value="CNC操作工">CNC操作工</option>
+                            <option value="注塑机操作工">注塑机操作工</option>
+                        </select>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="workExperience">工作经验</label>
+                        <select id="workExperience" class="form-control" required>
+                            <option value="">请选择工作经验</option>
+                            <option value="应届生">应届生</option>
+                            <option value="1年以下">1年以下</option>
+                            <option value="1-3年">1-3年</option>
+                            <option value="3-5年">3-5年</option>
+                            <option value="5年以上">5年以上</option>
+                        </select>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="message">留言内容</label>
+                        <textarea id="message" class="form-control" rows="4" placeholder="请输入您想了解的具体信息"></textarea>
+                    </div>
+    
+                    <button type="submit" class="submit-button">提交咨询</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>版权所有 © 2025 广州鑫汇达人力资源有限公司</p>
+            <p>粤ICP备XXXXXXXX号</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
